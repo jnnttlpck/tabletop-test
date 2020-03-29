@@ -18,9 +18,14 @@
   }
 
   function showInfo(data, tabletop) {
-    alert('Successfully processed!')
-    console.log(data);
+    data.forEach(function(data) {
+      header-1.innerHTML = data.header-1;
+      header-2.innerHTML = data.header-1;
+      body.innerHTML = data.body-1;
+    });
   }
+
+window.addEventListener('DOMContentLoaded', init)
 
   window.addEventListener('DOMContentLoaded', init)
 </script>
